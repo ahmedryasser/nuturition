@@ -1,0 +1,74 @@
+.nutrition.section {
+  padding: 32px 0;
+}
+
+.nutrition-card {
+  margin-bottom: 32px; 
+  position: relative;          
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.ingredient-label {
+  margin-bottom: 16px;
+  width: 100%;
+  font-weight: 600;
+  align-items: start;
+}
+
+.nutrition-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.stat-card {
+  padding: 16px;
+  text-align: center;
+  height: 100%;
+  border-radius: 16px; 
+}
+
+.stat-label {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.stat-value {
+  font-weight: bold;
+}
+
+/* ---- CATEGORY CHIP (top-left) ---- */
+.category-chip {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #22c55e !important;   
+  color: white !important;
+  z-index: 100;                  
+}
+
+/* ingredient row */
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+/* label that precedes the ingredient chips */
+.ingredients-title {
+  font-weight: 600;
+  margin-right: 8px;
+}

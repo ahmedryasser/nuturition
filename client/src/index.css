@@ -1,0 +1,120 @@
+:root {
+  --color-primary: #22c55e;
+  --color-accent: #fbbf24;
+  --color-bg: #181a1b;
+  --color-card: #23272aee;
+  --color-text: #f3f4f6;
+  --color-secondary: #38bdf8;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text);
+  background: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  background: inherit;
+  overflow-y: scroll; 
+}
+
+#root {
+  background: #181a1b;
+  color: #f3f4f6;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1.05em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(34,197,94,0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+button:hover {
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  box-shadow: 0 4px 16px rgba(34,197,94,0.12);
+  transform: translateY(-2px) scale(1.03);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 18px;
+  background: var(--color-card);
+  box-shadow: 0 4px 24px rgba(34,197,94,0.08);
+  margin: 1.5em 0;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(34,197,94,0.16);
+}
+
+.read-the-docs {
+  color: #64748b;
+  font-size: 1.1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a2e22;
+    --color-card: #22332a;
+    --color-text: #f3f4f6;
+    color: var(--color-text);
+    background: linear-gradient(135deg, var(--color-bg) 0%, #232526 100%);
+  }
+  a {
+    color: var(--color-secondary);
+  }
+  a:hover {
+    color: var(--color-accent);
+  }
+  button {
+    background: linear-gradient(90deg, #1a2e22 0%, var(--color-primary) 100%);
+    color: var(--color-text);
+  }
+  .card {
+    background: var(--color-card);
+    box-shadow: 0 4px 24px rgba(56,189,248,0.08);
+  }
+}
