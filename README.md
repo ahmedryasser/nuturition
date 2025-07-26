@@ -90,6 +90,8 @@ DB_PASSWORD=postgres
 
 The project relies on Sequelize **sync** to create tables automatically on start-up.
 
+<img width="1162" height="550" alt="db" src="https://github.com/user-attachments/assets/b5e96261-993c-4ba2-95d5-e92ecad5af4e" />
+
 
 ### 5. Run the backend
 
